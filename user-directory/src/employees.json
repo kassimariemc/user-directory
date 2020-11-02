@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "name": "Kassi Stumb",
+    "department": "Engineering Team",
+    "title": "Junior Front End Developer",
+    "salary": 100000,
+    "manager": "Alper G",
+    "email": "kassi@gmail.com",
+    "phone": "999-999-9999"
+  },
+  {
+    "id": 0,
+    "name": "Kassi Stumb",
+    "department": "Engineering Team",
+    "title": "Junior Front End Developer",
+    "salary": 100000,
+    "manager": "Alper G",
+    "email": "kassi@gmail.com",
+    "phone": "999-999-9999"
+  }
+]
