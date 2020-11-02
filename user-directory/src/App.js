@@ -11,14 +11,12 @@ class App extends Component {
     employees
   };
 
+  // need to fix remove employee function
   removeEmployee = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
     const updatedEmployees = this.state.employees.filter(employee => employee.id !== id);
-    // Set this.state.friends equal to the new friends array
     this.setState({ updatedEmployees });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import employees from "../../employees.json";
 
 class AddForm extends Component {
-  // Setting the component's initial state
   state = {
     name: "",
     department: "",
@@ -14,18 +13,15 @@ class AddForm extends Component {
   };
 
   handleInputChange = event => {
-    // Getting the value and name of the input which triggered the change
     let value = event.target.value;
     const name = event.target.name;
 
-    // Updating the input's state
     this.setState({
       [name]: value
     });
   };
 
   handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
     let employee = {
       id: employees.length,
