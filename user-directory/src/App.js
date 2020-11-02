@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import EmployeeCard from "./components/EmployeeCard";
 import Wrapper from "./components/Wrapper";
+import CardWrapper from "./components/CardWrapper";
 import Title from "./components/Title";
+import AddForm from "./components/AddForm";
 import employees from "./employees.json";
 
 class App extends Component {
@@ -21,20 +23,31 @@ class App extends Component {
     return (
       <Wrapper>
         <Title>Your Employee Directory</Title>
-        {this.state.employees.map(employee => (
-          <EmployeeCard
-            removeFriend={this.removeEmployee}
-            id={employee.id}
-            key={employee.id}
-            name={employee.name}
-            department={employee.department}
-            title={employee.title}
-            salary={employee.salary}
-            manager={employee.manager}
-            email={employee.email}
-            phone={employee.phone}
-          />
-        ))}
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <AddForm />
+            </div>
+            <div className="col-md-6"></div>
+          </div>
+        </div>
+        
+        <CardWrapper>
+          {this.state.employees.map(employee => (
+            <EmployeeCard
+              removeEmployee={this.removeEmployee}
+              id={employee.id}
+              key={employee.id}
+              name={employee.name}
+              department={employee.department}
+              title={employee.title}
+              salary={employee.salary}
+              manager={employee.manager}
+              email={employee.email}
+              phone={employee.phone}
+            />
+          ))}
+        </CardWrapper>
       </Wrapper>
     );
   }

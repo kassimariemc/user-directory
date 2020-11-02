@@ -29,7 +29,7 @@ function EmployeeCard(props) {
           </li>
         </ul>
       </div>
-      <div class="card-body">
+      <div className="card-body">
         <button type="button" className="card-link btn btn-warning">Edit Employee</button>
         <button type="button" className="card-link btn btn-primary" onClick={() => props.removeEmployee(props.id)}>Remove Employee</button>
       </div>
