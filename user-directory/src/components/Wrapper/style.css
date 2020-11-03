@@ -1,4 +1,7 @@
 .wrapper {
   padding-top: 50px;
   padding: 20px;
+  background-image: url('bckgrnd.jpg');
+  background-position: center;
+  background-size: cover;
 }

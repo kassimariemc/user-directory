@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import CardWrapper from "./components/CardWrapper";
 import Title from "./components/Title";
 import AddForm from "./components/AddForm";
+import SearchForm from "./components/SearchForm";
 import employees from "./employees.json";
 
 class App extends Component {
@@ -26,7 +27,9 @@ class App extends Component {
             <div className="col-md-6">
               <AddForm />
             </div>
-            <div className="col-md-6"></div>
+            <div className="col-md-6">
+              <SearchForm />
+            </div>
           </div>
         </div>
         
