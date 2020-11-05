@@ -13,7 +13,13 @@ class App extends Component {
     showAllEmployees: true
   };
 
-  filterEmployees = filteredEmployees => {
+  handleInputChange = event => {
+    let value = event.target.value;
+
+    const employees = this.state.employees;
+
+    const filteredEmployees = employees.filter(employee => {return employee.name.indexOf(value) !== -1});
+    
     this.setState({ ...this.state, filteredEmployees: filteredEmployees, showAllEmployees: false });
   };
 
@@ -40,7 +46,7 @@ class App extends Component {
           <div className="row">
             <div className="col-md-6">
               <SearchForm 
-                filterEmployees={this.filterEmployees}
+                handleInputChange={this.handleInputChange}
               />
             </div>
             <div className="col-md-6">
