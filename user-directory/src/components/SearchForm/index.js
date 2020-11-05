@@ -2,13 +2,16 @@ import React, { Component } from "react";
 import employees from "../../employees.json";
 
 class SearchForm extends Component {
-  state = {
-    name: "",
-    department: "",
-    title: "",
-    salary: "",
-    manager: ""
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      department: "",
+      title: "",
+      salary: "",
+      employees
+    };
+  }
 
   handleInputChange = event => {
     let value = event.target.value;
@@ -17,27 +20,39 @@ class SearchForm extends Component {
     this.setState({
       [name]: value
     });
+
+    const employees = this.state.employees;
+    const newFilter = [];
+
+    const filteredEmployees = employees.map(employee => {
+      if(employee[name] === value) {
+        newFilter.push(employee);
+      }
+      return newFilter;
+    })
+    
+    this.props.filterEmployees(filteredEmployees);
   };
 
   handleFormSubmit = event => {
     event.preventDefault();
 
     this.setState({
+      ...this.state,
       name: "",
       department: "",
       title: "",
-      salary: "",
-      manager: ""
+      salary: ""
     });
   };
 
   render() {
     return (
       <div className="jumbotron">
-        <h1 className="text-warning">Find Employee</h1>
+        <h1 className="text-warning"><i className="fa fa-search"></i></h1>
         <form>
           <div className="form-group">
-            <input className="form-control form-control-lg"
+            <input className="form-control"
               value={this.state.name}
               name="name"
               onChange={this.handleInputChange}
@@ -46,7 +61,7 @@ class SearchForm extends Component {
             />
           </div>
           <div className="form-group">
-            <input className="form-control form-control-lg"
+            <input className="form-control"
               value={this.state.department}
               name="department"
               onChange={this.handleInputChange}
@@ -55,21 +70,12 @@ class SearchForm extends Component {
             />
           </div>
           <div className="form-group">
-            <input className="form-control form-control-lg"
+            <input className="form-control"
               value={this.state.title}
               name="title"
               onChange={this.handleInputChange}
               type="text"
               placeholder="Search by Title"
-            />
-          </div>
-          <div className="form-group">
-            <input className="form-control form-control-lg"
-              value={this.state.manager}
-              name="manager"
-              onChange={this.handleInputChange}
-              type="text"
-              placeholder="Search by Manager"
             />
           </div>
           <button className="btn btn-warning" onClick={this.handleFormSubmit}>Submit</button>
