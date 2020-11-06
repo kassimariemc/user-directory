@@ -14,25 +14,6 @@ function SearchForm({ handleInputChange }) {
             placeholder="Search by Name"
           />
         </div>
-        {/* <div className="form-group">
-          <input className="form-control"
-            value={this.state.department}
-            name="department"
-            onChange={event => handleInputChange(event)}
-            type="text"
-            placeholder="Search by Department"
-          />
-        </div>
-        <div className="form-group">
-          <input className="form-control"
-            value={this.state.title}
-            name="title"
-            onChange={event => handleInputChange(event)}
-            type="text"
-            placeholder="Search by Title"
-          />
-        </div> */}
-        {/* <button className="btn btn-warning" onClick={this.handleFormSubmit}>Submit</button> */}
       </form>
     </div>
   );

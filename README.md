@@ -3,15 +3,16 @@
 
 ## Description
 
-View your entire employee directory with quick access to their information. Add and remove employees as needed. Search by employee name, department, title and manager.
+View your entire employee directory with quick access to their information. Search by employee name or sort by name, department or manager.
 
-![Screen Shot](public/images/screen-shot.png)
+![Screen Shot](screen-shot.png)
 
 
 Technologies used
 * Node.js
 * Express
 * React App
+* React Class Components and States
 
 
 Deployed Application: [https://kassimariemc.github.io/user-directory/](https://kassimariemc.github.io/user-directory/)

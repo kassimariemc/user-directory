@@ -15,7 +15,6 @@ class App extends Component {
 
   handleInputChange = event => {
     let value = event.target.value;
-
     const employees = this.state.employees;
 
     const filteredEmployees = employees.filter(employee => {return employee.name.indexOf(value) !== -1});
@@ -44,12 +43,12 @@ class App extends Component {
         <Title>Your Employee Directory</Title>
         <div className="container-full">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-4">
               <SearchForm 
                 handleInputChange={this.handleInputChange}
               />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-8">
             </div>
           </div>
         </div>
@@ -57,7 +56,7 @@ class App extends Component {
         <TableWrapper>
           <table className="table table-hover">
             <thead>
-              <tr>
+              <tr className="text-white">
                 <th scope="col">Employee <button className="btn btn-primary" onClick={this.sortByName}><i className="fa fa-sort"></i></button></th>
                 <th scope="col">Department <button className="btn btn-primary" onClick={this.sortByDept}><i className="fa fa-sort"></i></button></th>
                 <th scope="col">Title</th>
