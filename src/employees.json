@@ -75,7 +75,7 @@
     "department": "Sales",
     "title": "Sales Representative",
     "salary": "80,000",
-    "manager": "Michael Scott",
+    "manager": "Jim Halper",
     "email": "stanley@dundermifflin.com",
     "phone": "919-777-7777"
   },
@@ -85,7 +85,7 @@
     "department": "Sales",
     "title": "Sales Representative",
     "salary": "80,000",
-    "manager": "Michael Scott",
+    "manager": "Jim Halper",
     "email": "phyllis@dundermifflin.com",
     "phone": "919-888-8888"
   },
@@ -128,5 +128,35 @@
     "manager": "Michael Scott",
     "email": "toby@dundermifflin.com",
     "phone": "919-303-3030"
+  },
+  {
+    "id": 13,
+    "name": "Andy Bernard",
+    "department": "Sales",
+    "title": "Regional Director of Sales",
+    "salary": "90,000",
+    "manager": "Jim Halper",
+    "email": "andy@dundermifflin.com",
+    "phone": "919-404-4040"
+  },
+  {
+    "id": 14,
+    "name": "Ryan Howard",
+    "department": "Sales",
+    "title": "Temp",
+    "salary": "65,000",
+    "manager": "Jim Halper",
+    "email": "ryan@dundermifflin.com",
+    "phone": "919-505-5050"
+  },
+  {
+    "id": 15,
+    "name": "Kelly Kapoor",
+    "department": "Customer Service",
+    "title": "Customer Service Representative",
+    "salary": "80,000",
+    "manager": "Michael Scott",
+    "email": "kelly@dundermifflin.com",
+    "phone": "919-606-6060"
   }
 ]
