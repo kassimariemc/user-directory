@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/user-directory/static/css/main.770f558c.chunk.css",
+    "main.js": "/user-directory/static/js/main.fa7eb16b.chunk.js",
+    "main.js.map": "/user-directory/static/js/main.fa7eb16b.chunk.js.map",
+    "runtime-main.js": "/user-directory/static/js/runtime-main.4e3b6876.js",
+    "runtime-main.js.map": "/user-directory/static/js/runtime-main.4e3b6876.js.map",
+    "static/css/2.6668aac1.chunk.css": "/user-directory/static/css/2.6668aac1.chunk.css",
+    "static/js/2.a5d1e891.chunk.js": "/user-directory/static/js/2.a5d1e891.chunk.js",
+    "static/js/2.a5d1e891.chunk.js.map": "/user-directory/static/js/2.a5d1e891.chunk.js.map",
+    "index.html": "/user-directory/index.html",
+    "static/css/2.6668aac1.chunk.css.map": "/user-directory/static/css/2.6668aac1.chunk.css.map",
+    "static/css/main.770f558c.chunk.css.map": "/user-directory/static/css/main.770f558c.chunk.css.map",
+    "static/js/2.a5d1e891.chunk.js.LICENSE.txt": "/user-directory/static/js/2.a5d1e891.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/user-directory/static/media/bckgrnd1.a30873f8.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e3b6876.js",
+    "static/css/2.6668aac1.chunk.css",
+    "static/js/2.a5d1e891.chunk.js",
+    "static/css/main.770f558c.chunk.css",
+    "static/js/main.fa7eb16b.chunk.js"
+  ]
+}
