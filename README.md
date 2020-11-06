@@ -7,13 +7,9 @@ View your entire employee directory with quick access to their information. Sear
 
 ![Screen Shot](screen-shot.png)
 
-
 Technologies used
-* Node.js
-* Express
 * React App
 * React Class Components and States
-
 
 Deployed Application: [https://kassimariemc.github.io/user-directory/](https://kassimariemc.github.io/user-directory/)
 
