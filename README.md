@@ -9,7 +9,9 @@ View your entire employee directory with quick access to their information. Sear
 
 Technologies used
 * React App
-* React Class Components and States
+* JSX
+* Props and States
+* Class Components
 
 Deployed Application: [https://kassimariemc.github.io/user-directory/](https://kassimariemc.github.io/user-directory/)
 
