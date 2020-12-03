@@ -17,7 +17,7 @@ class App extends Component {
     let value = event.target.value;
     const employees = this.state.employees;
 
-    const filteredEmployees = employees.filter(employee => {return employee.name.indexOf(value) !== -1});
+    const filteredEmployees = employees.filter(employee => {return employee.name.toLowerCase().indexOf(value.toLowerCase()) !== -1});
     
     this.setState({ ...this.state, filteredEmployees: filteredEmployees, showAllEmployees: false });
   };
